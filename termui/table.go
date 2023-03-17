@@ -98,7 +98,7 @@ func (self *Table) Draw(buf *Buffer) {
 		if self.ShowCursor {
 			if (self.SelectedItem == "" && rowNum == self.SelectedRow) || (self.SelectedItem != "" && self.SelectedItem == row[self.UniqueCol]) {
 				style.Fg = self.CursorColor
-				style.Modifier = ModifierReverse
+				// style.Modifier = ModifierReverse
 				for _, width := range self.ColWidths {
 					if width == 0 {
 						continue
